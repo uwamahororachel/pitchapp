@@ -5,6 +5,7 @@
 ## Description
 This app allows users to create a pitch depending on a certain category and add pitch content. A user can also be able to comment and vote on another user's pitches.
 
+
 ## BDD
 
 * The user must log in first to the App
@@ -13,6 +14,7 @@ This app allows users to create a pitch depending on a certain category and add 
 * The user has to submit the  pitch they want 
 * User has to Upvote or downvote the others pitch
 * As user will make also a comment to pitch if he/she want
+
 
 
 ## Setup/Installation Requirements
@@ -24,6 +26,7 @@ This app allows users to create a pitch depending on a certain category and add 
      install Pyperclip module :python3.6 -m pip install pyperclip
      install virtual :python3.6 -m venv virtual
      activate virtual: source virtual/bin/activate
+
 
 ## Dependencies
      alembic
@@ -40,6 +43,7 @@ This app allows users to create a pitch depending on a certain category and add 
      psycopg2
      SQLAlchemy==1.2.8
      WTForms==2.2.1
+
 
 ## Contact details
 Contact me on the email:uwamahororachel55@gmail.com
