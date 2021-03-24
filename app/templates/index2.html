@@ -1,0 +1,85 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'macros.html' as macro %}
+{% block navbar %}
+{% include 'navbar.html'%}
+{% endblock %}
+<!-- Styles block -->
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+{% endblock %}
+<!-- Content block -->
+  {% block content %}
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <p style="margin-top:50px;font-family: cursive;font-size:18px;">To many people, the idea of pitching is intimidating. But for you to succeed 
+            in life , having a great pitch is not an option. 
+            A great pitch is concise, convincing and delivered in a self assured manner.
+            <br>
+            In life, you only have 60 seconds to impress someone. 1 minute can make or break you. 
+            How do we make sure that you use your 1 minute to actually say something meaningful?
+            This app will help you to  use that one minute wisely and write your PITCH you can also see the others pitches
+            vote them and comments on their pitches.<br>
+            Enjoy!
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <img src="https://cdn.pixabay.com/photo/2015/11/03/08/57/browse-1019849_960_720.jpg"height="300">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1 style="text-align:center;margin-top:150px;font-family: Georgia, 'Times New Roman', Times, serif;border-bottom:2px solid orange"> Categories</h1>
+      <br>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col-sm-3">
+      <a style="font-size:24px;text-transform:uppercase;text-decoration:none;color:black;font-family: 'Times New Roman', Times, serif" data-toggle="tab" href="#Interview">Interview</a>
+      <img src="https://cdn.pixabay.com/photo/2015/10/31/14/35/dark-1015828_960_720.jpg" class="image-responsive" width="250"> 
+    </div>
+      <div class="col-sm-3">
+      <a style="font-size:24px;text-transform:uppercase;text-decoration:none;color:black;font-family: 'Times New Roman', Times, serif" data-toggle="tab" href="#Business">Business</a> 
+      <img src="https://cdn.pixabay.com/photo/2015/10/31/14/35/dark-1015828_960_720.jpg"class="image-responsive" width="250"> 
+      </div>
+      <div class="col-sm-3">
+      
+      <a style="font-size:24px;text-transform:uppercase;text-decoration:none;color:black;font-family: 'Times New Roman', Times, serif" data-toggle="tab" href="#Promotion">Promotion</a>
+      <img src="https://cdn.pixabay.com/photo/2015/10/31/14/35/dark-1015828_960_720.jpg"class="image-responsive" width="250">   
+    </div>
+      <div class="col-sm-3">
+      
+      <a style="font-size:24px;text-transform:uppercase;text-decoration:none;color:black;font-family: 'Times New Roman', Times, serif"data-toggle="tab" href="#Product'">Product</a>
+      <img src="https://cdn.pixabay.com/photo/2015/10/31/14/35/dark-1015828_960_720.jpg"class="image-responsive" width="250">   
+    </div>
+       
+      </div>
+    </div>
+    
+   
+      
+         <div class="tab-content">
+        <div id="Interview" class="container tab-pane active"><br>
+          {{ macro.display(Interview) }}
+          
+        </div>
+        <div id="Business" class="container tab-pane fade"><br>
+          {{ macro.display(Business) }}
+        </div>
+        <div id="Promotion" class="container tab-pane fade"><br>
+          {{ macro.display(Promotion)}}
+        </div>
+        <div id="Product" class="container tab-pane fade"><br>
+          {{ macro.display(Product) }}
+        </div>
+      </div> 
+      </div>
+      <div style="margin-top:300px; background-color:black;text-align:center;color:white;height:100px;font-size:18px;padding-top:40px;"><p> &copy;2021 copyright |Uwamahororachel|All Right Reserved </p></div>
+  {% endblock %}
