@@ -25,6 +25,21 @@ This app allows users to create a pitch depending on a certain category and add 
      install virtual :python3.6 -m venv virtual
      activate virtual: source virtual/bin/activate
 
+## Dependencies
+     alembic
+     Flask
+     Flask-Bootstrap
+     Flask-Login
+     Flask-Mail
+     Flask-Migrate
+     Flask-Script=
+     Flask-SQLAlchemy
+     Flask-Uploads
+     Flask-WTF
+     jinja2
+     psycopg2
+     SQLAlchemy==1.2.8
+     WTForms==2.2.1
 
 ## Contact details
 Contact me on the email:uwamahororachel55@gmail.com
